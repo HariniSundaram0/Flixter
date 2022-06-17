@@ -28,7 +28,7 @@
     self.MovieTitle.text = self.detailDict[@"title"];
     self.ReleaseDate.text = self.detailDict[@"release_date"];
 //    self.VoteAvg.text = self.detailDict[@"vote_average"];
-//    self.Popularity.text = self.detailDict[@"popularity"];
+//    self.Popularity.text = self.detailDict[@"psopularity"];
     self.Overview.text=self.detailDict[@"overview"];
     
     NSString * baseURLString = @"https://image.tmdb.org/t/p/w500";

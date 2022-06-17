@@ -24,18 +24,19 @@
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
     [super viewDidLoad];
+    [self.activityIndicator startAnimating];
     [self fetchMovies];
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(fetchMovies) forControlEvents:UIControlEventValueChanged];
 //    [self.tableView addSubview:self.refreshControl];
     [self.tableView insertSubview:self.refreshControl atIndex:0];
     
-    [self.activityIndicator startAnimating];
+  
 
     // Stop the activity indicator
     // Hides automatically if "Hides When Stopped" is enabled
-    [self.activityIndicator stopAnimating];
     // Start the activity indicator
     
 }
@@ -53,6 +54,15 @@
         NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                if (error != nil) {
 //                   NSLog(@"%@", [error localizedDescription]);
+                   UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Network Error"
+                                                  message:@"Ah shoot! Please check your wifi >:("
+                                                  preferredStyle:UIAlertControllerStyleAlert];
+                    
+                   UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                      handler:^(UIAlertAction * action) {}];
+                    
+                   [alert addAction:defaultAction];
+                   [self presentViewController:alert animated:YES completion:nil];
                }
                else {
                    NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
@@ -65,6 +75,8 @@
                    // TODO: Get the array of movies
                    // TODO: Store the movies in a property to use elsewhere
                    // TODO: Reload your table view data
+                   [self.activityIndicator stopAnimating];
+
                }
             [self.refreshControl endRefreshing];
            }];
@@ -112,6 +124,7 @@
     
     
 }
+
 
 
 @end

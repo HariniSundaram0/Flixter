@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1D68CEB8C0ED765425AB6BE9 /* Pods_Flixter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0BE8586805669EB153F26B /* Pods_Flixter.framework */; };
+		5E7DF0A3285D1EBB009FFDCB /* CollectionViewGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DF0A2285D1EBB009FFDCB /* CollectionViewGridCell.m */; };
+		5E7DF0A6285D2343009FFDCB /* GridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7DF0A4285D2343009FFDCB /* GridViewController.m */; };
 		5E8241A0285A79CF00737EB9 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E82419F285A79CF00737EB9 /* MovieViewController.m */; };
 		5E8241A3285B8B0E00737EB9 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8241A2285B8B0E00737EB9 /* MovieCell.m */; };
 		5EF52904285BD5EF00BD7BCB /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF52903285BD5EF00BD7BCB /* DetailsViewController.m */; };
@@ -45,6 +47,10 @@
 		26A2B7AB47691756721BF763 /* Pods-FlixterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixterTests.debug.xcconfig"; path = "Target Support Files/Pods-FlixterTests/Pods-FlixterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		32660A64FE86E978E56B0DF6 /* Pods_Flixter_FlixterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixter_FlixterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		390AA9FCC34414E362F9C5F7 /* Pods-Flixter-FlixterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixter-FlixterUITests.release.xcconfig"; path = "Target Support Files/Pods-Flixter-FlixterUITests/Pods-Flixter-FlixterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E7DF0A1285D1EBB009FFDCB /* CollectionViewGridCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewGridCell.h; sourceTree = "<group>"; };
+		5E7DF0A2285D1EBB009FFDCB /* CollectionViewGridCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewGridCell.m; sourceTree = "<group>"; };
+		5E7DF0A4285D2343009FFDCB /* GridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GridViewController.m; path = Pods/GridViewController.m; sourceTree = SOURCE_ROOT; };
+		5E7DF0A5285D2343009FFDCB /* GridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GridViewController.h; path = Pods/GridViewController.h; sourceTree = SOURCE_ROOT; };
 		5E82419E285A79CF00737EB9 /* MovieViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
 		5E82419F285A79CF00737EB9 /* MovieViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		5E8241A1285B8B0E00737EB9 /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
@@ -145,6 +151,10 @@
 				5EF740BF285A50EE00FB23F6 /* SceneDelegate.h */,
 				5EF740C0285A50EE00FB23F6 /* SceneDelegate.m */,
 				5EF740C5285A50EE00FB23F6 /* Main.storyboard */,
+				5E7DF0A5285D2343009FFDCB /* GridViewController.h */,
+				5E7DF0A4285D2343009FFDCB /* GridViewController.m */,
+				5E7DF0A1285D1EBB009FFDCB /* CollectionViewGridCell.h */,
+				5E7DF0A2285D1EBB009FFDCB /* CollectionViewGridCell.m */,
 				5EF52902285BD5EF00BD7BCB /* DetailsViewController.h */,
 				5EF52903285BD5EF00BD7BCB /* DetailsViewController.m */,
 				5E82419E285A79CF00737EB9 /* MovieViewController.h */,
@@ -427,6 +437,8 @@
 				5EF740BE285A50EE00FB23F6 /* AppDelegate.m in Sources */,
 				5E8241A3285B8B0E00737EB9 /* MovieCell.m in Sources */,
 				5EF740CF285A50EF00FB23F6 /* main.m in Sources */,
+				5E7DF0A3285D1EBB009FFDCB /* CollectionViewGridCell.m in Sources */,
+				5E7DF0A6285D2343009FFDCB /* GridViewController.m in Sources */,
 				5EF52904285BD5EF00BD7BCB /* DetailsViewController.m in Sources */,
 				5EF740C1285A50EE00FB23F6 /* SceneDelegate.m in Sources */,
 				5E8241A0285A79CF00737EB9 /* MovieViewController.m in Sources */,
